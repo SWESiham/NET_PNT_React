@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <p>Welcome to worldwide Megamart!</p>
+            <div class="top-links">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Deliver to 400001</a>
+                <a href="#"><i class="fa-solid fa-truck"></i> Track your order</a>
+                <a href="#"><i class="fa-solid fa-tag"></i> All Offers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header container">
+        <div class="logo">
+            <i class="fa-solid fa-bars menu-icon"></i>
+            <h1>MegaMart</h1>
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" placeholder="Search essentials, groceries and more...">
+            <i class="fa-solid fa-list-ul"></i>
+        </div>
+        <div class="user-actions">
+            <a href="#"><i class="fa-regular fa-user"></i> Sign Up/Sign In</a>
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!-- Cart Menu (dropdown) -->
+    <div class="cart-menu">
+        <div class="cart-menu-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <p>Total: <span class="cart-total-amount">₹0</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar container">
+        <ul class="nav-links">
+            <li class="active"><a href="#">Groceries <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Premium Fruits <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Home & Kitchen <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Fashion <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Electronics <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Beauty <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Home Improvement <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">Sports, Toys & Luggage <i class="fa-solid fa-chevron-down"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>Best Deal Online on smart watches</p>
+                    <h2>SMART WEARABLE.</h2>
+                    <h3>UP to 80% OFF</h3>
+                </div>
+                <div class="hero-image">
+                    <img src="img/image 2.png" style="margin-left: 100%;" alt="Smart Watch">
+                </div>
+            </div>
+            <button class="nav-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="pagination"></div>
+        </section>
+
+        <!-- Smartphones Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Grab the best deal on <span>Smartphones</span></h2>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-id="p1" data-name="Galaxy S22 Ultra" data-price="32999" data-image="img/image 3 (1).png">
+                    <span class="badge">56%<br>OFF</span>
+                    <img src="img/image 3 (1).png" alt="Phone">
+                    <h4>Galaxy S22 Ultra</h4>
+                    <div class="pricing">
+                        <span class="price">₹32999</span>
+                        <span class="old-price">₹74999</span>
+                    </div>
+                    <p class="save">Save - ₹32999</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card" data-id="p2" data-name="Galaxy M13 (4GB | 64 GB )" data-price="10499" data-image="img/image 3 (1).png">
+                    <span class="badge">56%<br>OFF</span>
+                    <img src="img/image 3 (2).png" alt="Phone">
+                    <h4>Galaxy M13 (4GB | 64 GB )</h4>
+                    <div class="pricing">
+                        <span class="price">₹10499</span>
+                        <span class="old-price">₹14999</span>
+                    </div>
+                    <p class="save">Save - ₹4500</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card" data-id="p3" data-name="Galaxy M33 (4GB | 64 GB )" data-price="16999" data-image="img/image 3 (2).png">
+                    <span class="badge">56%<br>OFF</span>
+                    <img src="img/image 3 (2).png" alt="Phone">
+                    <h4>Galaxy M33 (4GB | 64 GB )</h4>
+                    <div class="pricing">
+                        <span class="price">₹16999</span>
+                        <span class="old-price">₹24999</span>
+                    </div>
+                    <p class="save">Save - ₹8000</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="product-card" data-id="p4" data-name="Galaxy M53 (4GB | 64 GB )" data-price="31999" data-image="img/image 3 (3).png">
+                    <span class="badge">56%<br>OFF</span>
+                    <img src="img/image 3 (3).png" alt="Phone">
+                    <h4>Galaxy M53 (4GB | 64 GB )</h4>
+                    <div class="pricing">
+                        <span class="price">₹31999</span>
+                        <span class="old-price">₹40999</span>
+                    </div>
+                    <p class="save">Save - ₹9000</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product-card" data-id="p5" data-name="Galaxy S22 Ultra (Pro)" data-price="67999" data-image="img/image 3 (3).png">
+                    <span class="badge">56%<br>OFF</span>
+                    <img src="img/image 3 (3).png" alt="Phone">
+                    <h4>Galaxy S22 Ultra</h4>
+                    <div class="pricing">
+                        <span class="price">₹67999</span>
+                        <span class="old-price">₹85999</span>
+                    </div>
+                    <p class="save">Save - ₹18000</p>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Categories Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Shop From <span>Top Categories</span></h2>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="category-grid">
+                <div class="category-item"><div class="circle"><img src="img/image 3 (6).png" alt="Mobile"></div><p>Mobile</p></div>
+                <div class="category-item"><div class="circle"><img src="img/image 3 (7).png" alt="Cosmetics"></div><p>Cosmetics</p></div>
+                <div class="category-item"><div class="circle"><img src="img/Ellipse 41.png" alt="Electronics"></div><p>Electronics</p></div>
+                <div class="category-item"><div class="circle"><img src="img/image 4.png" alt="Furniture"></div><p>Furniture</p></div>
+                <div class="category-item"><div class="circle"><img src="img/image 5.png" alt="Watches"></div><p>Watches</p></div>
+                <div class="category-item"><div class="circle"><img src="img/image 6.png" alt="Decor"></div><p>Decor</p></div>
+                <div class="category-item"><div class="circle"><img src="img/image 7.png" alt="Accessories"></div><p>Accessories</p></div>
+            </div>
+        </section>
+
+        <!-- Top Electronics Brands -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Top <span>Electronics Brands</span></h2>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-card bg-dark">
+                    <div class="brand-info">
+                        <span class="tag">IPHONE</span>
+                        <i class="fa-brands fa-apple brand-icon"></i>
+                        <h3>UP to 80% OFF</h3>
+                    </div>
+                    <img src="img/image 9 (2).png" alt="Iphone">
+                </div>
+                <div class="brand-card bg-yellow">
+                    <div class="brand-info">
+                        <span class="tag">REALME</span>
+                        <h2 class="brand-name">realme</h2>
+                        <h3>UP to 80% OFF</h3>
+                    </div>
+                    <img src="img/image 9 (1).png" alt="Realme">
+                </div>
+                <div class="brand-card bg-orange">
+                    <div class="brand-info">
+                        <span class="tag">XIAOMI</span>
+                        <i class="fa-solid fa-mobile-screen brand-icon"></i>
+                        <h3>UP to 80% OFF</h3>
+                    </div>
+                    <img src="img/image 9.png" alt="Xiaomi">
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Essentials -->
+        <section class="section">
+            <div class="section-header">
+                <h2>Daily <span>Essentials</span></h2>
+                <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="essentials-grid">
+                <div class="essential-card">
+                    <img src="img/image.png" alt="Essentials">
+                    <h4>Daily Essentials</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+                <div class="essential-card">
+                    <img src="img/image (1).png" alt="Vegetables">
+                    <h4>Vegetables</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+                <div class="essential-card">
+                    <img src="img/pngegg 1.png" alt="Fruits">
+                    <h4>Fruits</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+                <div class="essential-card">
+                    <img src="img/23410-4-strawberry-photo 1.png" alt="Strawberry">
+                    <h4>Strawberry</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+                <div class="essential-card">
+                    <img src="img/22136-3-mango-fruit 1.png" alt="Mango">
+                    <h4>Mango</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+                <div class="essential-card">
+                    <img src="img/35763-7-cherry-fruit-file 1.png" alt="Cherry">
+                    <h4>Cherry</h4>
+                    <p>UP to 50% OFF</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2>MegaMart</h2>
+                <p>Contact Us</p>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <span>WhatsApp</span>
+                        <p>+1 202-918-2132</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span>Call Us</span>
+                        <p>+1 202-918-2132</p>
+                    </div>
+                </div>
+                <p>Download App</p>
+                <div class="app-buttons">
+                    <img src="img/image 10.png" alt="App Store">
+                    <img src="img/image 11.png" alt="Google Play">
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Most Popular Categories</h3>
+                <ul>
+                    <li><a href="#">Staples</a></li>
+                    <li><a href="#">Beverages</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Vegetables & Fruits</a></li>
+                    <li><a href="#">Snacks & Foods</a></li>
+                    <li><a href="#">Dairy & Bakery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">E-waste Policy</a></li>
+                    <li><a href="#">Cancellation & Return Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

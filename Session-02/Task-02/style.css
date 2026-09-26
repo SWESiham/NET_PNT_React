@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    background-color: #f5d04e;
+}
+main{
+     display: flex;
+     justify-content: center;
+    align-items:center;
+    height: 100vh;
+
+}
+.card{
+    width: 400px;
+    height: 550px;
+    border: black 1px solid;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 7px 7px 2px  black;
+    padding: 20px;
+
+}
+.card-back{
+    width: 100%;
+    border-radius: 40px;
+}
+.tag{
+    font-weight: bold;
+    margin: 10px;
+    background-color: #f5d04e;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 12px;
+}
+.card-content{
+    margin-left: 10px;
+}
+.card-content > p ,h2{
+    margin-bottom: 15px;
+}
+.card-content p{
+    font-size: 20px;
+    color: gray;
+}
+.card-footer{
+    margin-top: 30px;
+    display: flex;
+}
+.card-footer img{
+    width: 13%;
+    border-radius: 50%;
+}
+.card-footer h5{
+    align-self: center;
+    margin-left: 15px;
+    font-size: 17px;
+
+}
+.flex{
+    display: flex;
+
+}
+button{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+}
+nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+nav button{
+    content: "Dark Mode";
+    width: 100px;
+    color: white;
+
+
+}
+.flex button{
+    font-weight: bold;
+    margin: 10px;
+    background-color: #f5d04e;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 12px;
+}

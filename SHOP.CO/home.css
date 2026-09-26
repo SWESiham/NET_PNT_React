@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Satoshi Light", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Integral CF Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-banner {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.top-banner a {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.close-banner {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    gap: 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.brand-name {
+    font-size: 32px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    color: #000;
+}
+
+.search-bar {
+    flex: 1;
+    background: #F0F0F0;
+    border-radius: 50px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #333;
+}
+
+.btn-outline {
+    background: #fff;
+    color: #000;
+    border: 1px solid #E5E5E5;
+    margin-top: 30px;
+}
+
+.btn-outline:hover {
+    background: #f0f0f0;
+}
+
+.btn-white {
+    background: #fff;
+    color: #000;
+    width: 100%;
+}
+
+.hero {
+    background: #C2C0C1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 550px;
+    padding: 80px 0;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.metrics {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.metrics h6 {
+    font-size: 2.5rem;
+    font-family: "Satoshi Light", sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.metrics p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.star-icon {
+    position: absolute;
+    color: #000;
+    font-size: 3rem;
+    font-family: sans-serif;
+    z-index: 1;
+}
+
+.star-top {
+    top: 20%;
+    right: 10%;
+    font-size: 4rem;
+}
+
+.star-bottom {
+    top: 50%;
+    left: 0;
+    font-size: 2.5rem;
+}
+
+.brands {
+    background: #000;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brands img {
+    height: 35px;
+    object-fit: contain;
+}
+
+.product-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    text-align: left;
+}
+
+.product-card {
+    min-width: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-card .img-box {
+    background: #F0EEED;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFC633;
+    font-size: 14px;
+}
+
+.rating span {
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing del {
+    color: #999;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.discount {
+    color: #FF3333;
+    background: rgba(255, 51, 51, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #E5E5E5;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.browse-section {
+    padding: 0 5% 60px;
+}
+
+.browse-container {
+    background: #F0F0F0;
+    border-radius: 40px;
+    padding: 50px;
+    text-align: center;
+}
+
+.browse-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.browse-card {
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.browse-card img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.browse-card span {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.small-card {
+    flex: 1 1 35%;
+}
+
+.large-card {
+    flex: 1 1 60%;
+}
+
+.reviews-section {
+    padding: 60px 5%;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.nav-arrows {
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.review-card {
+    border: 1px solid #E5E5E5;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 350px;
+    flex: 1;
+}
+
+.review-card .stars {
+    color: #FFC633;
+    margin-bottom: 15px;
+}
+
+.review-card h3 {
+    font-family: "Satoshi Light", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-success {
+    color: #01AB31;
+}
+
+.review-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.footer-wrapper {
+    margin-top: 100px;
+    position: relative;
+}
+
+.newsletter-box {
+    background: #000;
+    padding: 40px 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: -80px;
+    left: 5%;
+    z-index: 10;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.newsletter-title {
+    color: #fff;
+    font-size: 2.2rem;
+    max-width: 500px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.input-group {
+    background: #fff;
+    border-radius: 50px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.main-footer {
+    background: #F0F0F0;
+    padding: 140px 5% 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    background: #fff;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    background: #000;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.link-col h4 {
+    font-family: "Satoshi Light", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.link-col a {
+    display: block;
+    color: #666;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.link-col a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    border-top: 1px solid #E5E5E5;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-icons img {
+    height: 30px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 991px) {
+
+    .nav-links,
+    .search-bar,
+    .top-banner p a {
+        display: none;
+    }
+
+    .mobile-menu,
+    .mobile-search {
+        display: block;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero-content {
+        padding: 40px 5%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .metrics {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .metrics div {
+        width: 45%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .brands {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .brands img {
+        height: 25px;
+    }
+
+    .product-grid,
+    .reviews-grid {
+        padding-bottom: 10px;
+    }
+
+    .product-card {
+        min-width: 200px;
+    }
+
+    .browse-container {
+        padding: 30px 20px;
+    }
+
+    .small-card,
+    .large-card {
+        flex: 1 1 100%;
+        height: 200px;
+    }
+
+    .newsletter-box {
+        top: -120px;
+        padding: 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .newsletter-title {
+        font-size: 1.8rem;
+    }
+
+    .main-footer {
+        padding-top: 180px;
+    }
+
+    .footer-links {
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .link-col {
+        width: 45%;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}

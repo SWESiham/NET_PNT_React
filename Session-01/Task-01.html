@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-01</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; text-align: center;">
+    <header>
+        <h1>Personal Portfolio</h1>
+    </header>
+    <nav
+        style="padding: 10px; flex-direction: row; display:flex; gap:20px; justify-content:space-around; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); ">
+        <ul style="list-style-type: none; padding: 0; display: flex; gap: 20px;">
+            <li><a href="#Home" style="color:black; text-decoration:none">Home</a></li>
+            <li><a href="#About" style="color:black; text-decoration:none">About</a></li>
+            <li><a href="#Skills" style="color:black; text-decoration:none">Skills</a></li>
+            <li><a href="#Projects" style="color:black; text-decoration:none">Projects</a></li>
+            <li><a href="#Contact" style="color:black; text-decoration:none">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Home"
+            style="padding: 30px 20px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content:space-evenly; margin-top: 20px;">
+            <div>
+                <img src="https://i.pinimg.com/736x/22/29/29/2229299b41dcff3cb2f627672e9374a8.jpg" alt="Profile Picture"
+                    width="200" style="border-radius: 50%; object-fit: cover;">
+                <figcaption>My status</figcaption>
+            </div>
+
+
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+
+
+            <!-- <iframe width="320" height="200" src="https://www.youtube.com/embed/qET1EG4vkOo"
+                title="Cute VS Code Setup | Pets, Themes, &amp; Extensions" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            -->
+
+        </section>
+        <section id="About" style="padding: 30px 20px;">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with experience in creating dynamic and responsive websites. I
+                enjoy learning new technologies and improving my skills.</p>
+        </section>
+        <section id="Skills" style="padding: 30px 20px;">
+            <h2>Skills</h2>
+            <div class="table-responsive">
+                <table class="table table-primary" border="1"
+                    style="width: 50%; margin: auto; border-collapse: collapse; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3"
+                                style=" background-color: rgb(70, 70, 255); margin:10px; padding:10px; color:white">My
+                                card Info
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row" rowspan="2"
+                                style="font-weight: bold; color: blue; background-color: lightblue;">My
+                                Skills</td>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr class="">
+                            <td>JS</td>
+                            <td>React</td>
+                        </tr>
+
+                        <tr class="">
+                            <td scope="row" style="font-weight: bold; color: blue; background-color: lightblue;">My Name
+                            </td>
+                            <td scope="col" colspan="2">Siham Said</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        <section id="Projects" style="padding: 30px 20px;">
+            <h2>Projects</h2>
+            <ul
+                style="padding: 20px; display: flex; flex-direction: row; align-items: center; gap: 20px; justify-content:space-evenly;list-style-type: none;">
+                <li>Portfolio Website</li>
+                <li>E-commerce Platform</li>
+                <li>Blogging Application</li>
+            </ul>
+        </section>
+        <section id="Contact" style="padding: 30px 20px;">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+        </section>
+    </main>
+
+
+    <footer style="padding: 20px; background-color: #474747; margin-top: 20px;">
+        <p>&copy; 2024 Personal Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
